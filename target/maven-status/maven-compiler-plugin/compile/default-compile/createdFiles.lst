@@ -1,0 +1,6 @@
+com\backend\dao\TipoDocumentoIdentidadDAO.class
+com\backend\services\TipoDocumentoIdentidadService.class
+com\backend\Main.class
+com\backend\Util\DatabaseConnection.class
+com\backend\restcontroller\TipoDocumentoIdentidadController.class
+com\backend\model\entity\TipoDocumentoIdentidad.class
