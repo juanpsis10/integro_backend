@@ -18,12 +18,12 @@ public class UbigeoDepartamento {
     @Column(name = "fl_estado")
     private boolean estado;
 
-    // Constructor
+    
     public UbigeoDepartamento() {
-        // Constructor vacío necesario para JPA
+        
     }
 
-    // Getters y setters
+    
     public String getCodigoDepartamento() {
         return codigoDepartamento;
     }

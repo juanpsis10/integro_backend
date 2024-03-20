@@ -34,11 +34,11 @@ public class Paciente {
     @Column(name = "co_asegurado")
     private String coAsegurado;
 
-    // Constructor vacío
+    
     public Paciente() {
     }
 
-    // Constructor con todos los atributos
+    
     public Paciente(Integer idPaciente, Integer idTipoDocide, String noDocide, String noApepat, String noApemat, String noNombres, Boolean flEstado, LocalDate feNacimiento, String coAsegurado) {
         this.idPaciente = idPaciente;
         this.idTipoDocide = idTipoDocide;
@@ -51,7 +51,7 @@ public class Paciente {
         this.coAsegurado = coAsegurado;
     }
 
-    // Métodos getters y setters
+    
     public Integer getIdPaciente() {
         return idPaciente;
     }

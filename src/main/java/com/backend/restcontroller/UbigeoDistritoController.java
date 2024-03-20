@@ -4,8 +4,9 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.backend.services.UbigeoDistritoService;
@@ -17,8 +18,8 @@ public class UbigeoDistritoController {
     @Autowired
     private UbigeoDistritoService ubigeoDistritoService;
 
-    @GetMapping("/{codigoProvincia}")
-    public List<Object[]> buscarPorCodigoProvincia(@PathVariable String codigoProvincia) {
-        return ubigeoDistritoService.buscarPorCodigoProvincia(codigoProvincia);
+    @GetMapping
+    public List<Object[]> obtenerDistritosPorDepartamentoYProvincia(@RequestParam("codigoDepartamento") String codigoDepartamento, @RequestParam("codigoProvincia") String codigoProvincia) {
+        return ubigeoDistritoService.buscarPorCodigosDepartamentoYProvincia(codigoDepartamento, codigoProvincia);
     }
 }

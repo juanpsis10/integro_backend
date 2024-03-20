@@ -10,6 +10,6 @@ import com.backend.model.entity.UbigeoDistrito;
 
 public interface UbigeoDistritoDAO extends JpaRepository<UbigeoDistrito, String> {
 
-    @Query("SELECT u.descripcionDistrito, u.codigoDistrito, u.estado FROM UbigeoDistrito u WHERE u.codigoProvincia = :codigoProvincia GROUP BY u.descripcionDistrito, u.codigoDistrito, u.estado")
-    List<Object[]> buscarPorCodigoProvincia(@Param("codigoProvincia") String codigoProvincia);
+    @Query("SELECT u.descripcionDistrito, u.codigoDistrito, u.estado FROM UbigeoDistrito u WHERE u.codigoDepartamento = :codigoDepartamento AND u.codigoProvincia = :codigoProvincia GROUP BY u.descripcionDistrito, u.codigoDistrito, u.estado")
+    List<Object[]> buscarPorCodigosDepartamentoYProvincia(@Param("codigoDepartamento") String codigoDepartamento, @Param("codigoProvincia") String codigoProvincia);
 }

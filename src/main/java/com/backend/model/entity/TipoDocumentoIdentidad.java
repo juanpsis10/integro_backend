@@ -22,7 +22,7 @@ public class TipoDocumentoIdentidad {
     private String codigo;
 
     public TipoDocumentoIdentidad() {
-        // Constructor vacío necesario para JPA
+        
     }
 
     public TipoDocumentoIdentidad(Integer id, Boolean estado, String descripcion, String codigo) {
@@ -32,7 +32,7 @@ public class TipoDocumentoIdentidad {
         this.codigo = codigo;
     }
 
-    // Getters y setters
+    
 
     public Integer getId() {
         return id;

@@ -13,7 +13,7 @@ public class UbigeoDistritoService {
     @Autowired
     private UbigeoDistritoDAO ubigeoDistritoDAO;
 
-    public List<Object[]> buscarPorCodigoProvincia(String codigoProvincia) {
-        return ubigeoDistritoDAO.buscarPorCodigoProvincia(codigoProvincia);
+    public List<Object[]> buscarPorCodigosDepartamentoYProvincia(String codigoDepartamento, String codigoProvincia) {
+        return ubigeoDistritoDAO.buscarPorCodigosDepartamentoYProvincia(codigoDepartamento, codigoProvincia);
     }
 }

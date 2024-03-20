@@ -19,7 +19,7 @@ public class Parentesco {
     private String parentesco;
 
     public Parentesco() {
-        // Constructor vacío necesario para JPA
+        
     }
 
     public Parentesco(Integer id, Boolean activo, String parentesco) {
@@ -28,7 +28,7 @@ public class Parentesco {
         this.parentesco = parentesco;
     }
 
-    // Getters y setters
+    
     public Integer getId() {
         return id;
     }

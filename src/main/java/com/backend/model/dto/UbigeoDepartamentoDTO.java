@@ -5,18 +5,18 @@ public class UbigeoDepartamentoDTO {
     private String descripcionDepartamento;
     private boolean estado;
 
-    // Constructor vacío
+    
     public UbigeoDepartamentoDTO() {
     }
 
-    // Constructor con parámetros
+    
     public UbigeoDepartamentoDTO(String codigoDepartamento, String descripcionDepartamento, boolean estado) {
         this.codigoDepartamento = codigoDepartamento;
         this.descripcionDepartamento = descripcionDepartamento;
         this.estado = estado;
     }
 
-    // Getters y setters
+    
     public String getCodigoDepartamento() {
         return codigoDepartamento;
     }

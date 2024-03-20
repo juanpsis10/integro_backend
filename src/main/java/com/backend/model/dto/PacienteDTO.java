@@ -3,6 +3,7 @@ package com.backend.model.dto;
 import java.time.LocalDate;
 
 public class PacienteDTO {
+    private Integer idPaciente;
     private String noApepat;
     private String noApemat;
     private String noNombres;
@@ -12,7 +13,8 @@ public class PacienteDTO {
     private String coAsegurado;
     private String descripcionTipoDocide;
 
-    public PacienteDTO(String noApepat, String noApemat, String noNombres, String noDocide, Boolean flEstado, LocalDate feNacimiento, String coAsegurado, String descripcionTipoDocide) {
+    public PacienteDTO(Integer idPaciente,String noApepat, String noApemat, String noNombres, String noDocide, Boolean flEstado, LocalDate feNacimiento, String coAsegurado, String descripcionTipoDocide) {
+        this.idPaciente = idPaciente;
         this.noApepat = noApepat;
         this.noApemat = noApemat;
         this.noNombres = noNombres;
@@ -21,6 +23,14 @@ public class PacienteDTO {
         this.feNacimiento = feNacimiento;
         this.coAsegurado = coAsegurado;
         this.descripcionTipoDocide = descripcionTipoDocide;
+    }
+
+    public Integer getIdPaciente() {
+        return idPaciente;
+    }
+
+    public void setIdPaciente(Integer idPaciente) {
+        this.idPaciente = idPaciente;
     }
 
     public String getNoApepat() {

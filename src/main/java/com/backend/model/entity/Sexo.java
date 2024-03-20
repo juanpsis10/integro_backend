@@ -19,7 +19,7 @@ public class Sexo {
     private String descripcion;
 
     public Sexo() {
-        // Constructor vacío necesario para JPA
+        
     }
 
     public Sexo(Integer id, Boolean estado, String descripcion) {
@@ -28,7 +28,7 @@ public class Sexo {
         this.descripcion = descripcion;
     }
 
-    // Getters y setters
+    
     public Integer getId() {
         return id;
     }

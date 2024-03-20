@@ -18,22 +18,26 @@ public class UbigeoDistrito {
     @Column(name = "fl_estado")
     private boolean estado;
 
-    @Column(name = "codigo_provincia") // Campo necesario para filtrar por provincia
+    @Column(name = "codigo_departamento") 
+    private String codigoDepartamento;
+
+    @Column(name = "codigo_provincia") 
     private String codigoProvincia;
 
-    // Constructor vacío
+    
     public UbigeoDistrito() {
     }
 
-    // Constructor con todos los atributos
-    public UbigeoDistrito(String codigoDistrito, String descripcionDistrito, boolean estado, String codigoProvincia) {
+    
+    public UbigeoDistrito(String codigoDistrito, String descripcionDistrito, boolean estado, String codigoDepartamento, String codigoProvincia) {
         this.codigoDistrito = codigoDistrito;
         this.descripcionDistrito = descripcionDistrito;
         this.estado = estado;
+        this.codigoDepartamento = codigoDepartamento;
         this.codigoProvincia = codigoProvincia;
     }
 
-    // Métodos getters y setters
+    
     public String getCodigoDistrito() {
         return codigoDistrito;
     }
@@ -56,6 +60,14 @@ public class UbigeoDistrito {
 
     public void setEstado(boolean estado) {
         this.estado = estado;
+    }
+
+    public String getCodigoDepartamento() {
+        return codigoDepartamento;
+    }
+
+    public void setCodigoDepartamento(String codigoDepartamento) {
+        this.codigoDepartamento = codigoDepartamento;
     }
 
     public String getCodigoProvincia() {

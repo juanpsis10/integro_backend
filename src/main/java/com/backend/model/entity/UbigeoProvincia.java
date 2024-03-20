@@ -18,22 +18,22 @@ public class UbigeoProvincia {
     @Column(name = "fl_estado")
     private boolean estado;
 
-    @Column(name = "codigo_departamento") // Nuevo campo
+    @Column(name = "codigo_departamento") 
     private String codigoDepartamento;
 
-    // Constructor vacío
+    
     public UbigeoProvincia() {
     }
 
-    // Constructor con todos los atributos
+    
     public UbigeoProvincia(String codigoProvincia, String descripcionProvincia, boolean estado, String codigoDepartamento) {
         this.codigoProvincia = codigoProvincia;
         this.descripcionProvincia = descripcionProvincia;
         this.estado = estado;
-        this.codigoDepartamento = codigoDepartamento; // Asignación del nuevo campo
+        this.codigoDepartamento = codigoDepartamento; 
     }
 
-    // Métodos getters y setters
+    
     public String getCodigoProvincia() {
         return codigoProvincia;
     }

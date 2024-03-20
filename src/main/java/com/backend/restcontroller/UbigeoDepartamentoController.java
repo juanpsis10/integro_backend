@@ -1,6 +1,6 @@
 package com.backend.restcontroller;
 
-//import com.backend.model.entity.UbigeoDepartamento;
+
 import com.backend.services.UbigeoDepartamentoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

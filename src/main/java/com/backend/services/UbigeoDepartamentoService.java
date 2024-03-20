@@ -1,7 +1,7 @@
 package com.backend.services;
 
 import com.backend.dao.UbigeoDepartamentoDAO;
-//import com.backend.model.entity.UbigeoDepartamento;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

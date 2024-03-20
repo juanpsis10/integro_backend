@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TipoDocumentoIdentidadDAO extends JpaRepository<TipoDocumentoIdentidad, Integer> {
-    // Aquí podrías agregar métodos personalizados para consultas específicas si es necesario
+    
 }

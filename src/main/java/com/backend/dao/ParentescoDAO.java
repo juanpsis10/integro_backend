@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ParentescoDAO extends JpaRepository<Parentesco, Integer> {
-    // Aquí podrías agregar métodos personalizados para consultas específicas si es necesario
 }

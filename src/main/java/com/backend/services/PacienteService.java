@@ -27,6 +27,7 @@ public class PacienteService {
         return pacientes.stream().map(paciente -> {
             TipoDocumentoIdentidad tipoDocumento = tipoDocumentoIdentidadDAO.findById(paciente.getIdTipoDocide()).orElse(null);
             return new PacienteDTO(
+                    paciente.getIdPaciente(),
                     paciente.getNoApepat(),
                     paciente.getNoApemat(),
                     paciente.getNoNombres(),
